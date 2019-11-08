@@ -10,4 +10,4 @@ services:
     - GDRIVE_CLIENT_SECRET=<gdrive_secret>
     - DROPBOX_CLIENT_ID=<dropbox_key>
     ports:
-    - "8334:8334"
+    - "127.0.0.1:8334:8334"

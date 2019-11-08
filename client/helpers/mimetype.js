@@ -6,7 +6,7 @@ export function getMimeType(file){
     if(mime){
         return mime;
     }else{
-        return 'text/plain';
+        return 'application/octet-stream';
     }
 }
 
@@ -29,6 +29,6 @@ export function opener(file){
     }else if(mime.split('/')[0] === "application"){
         return 'download';
     }else{
-        return 'editor';
+        return 'download';
     }
 }

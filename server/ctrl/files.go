@@ -178,7 +178,7 @@ func FileCat(ctx App, res http.ResponseWriter, req *http.Request) {
 				}
 			}
 		} else {
-			tmpPath := filepath.Join(GetCurrentDir(), filepath.Join(GetCurrentDir(), TMP_PATH), "file_" + QuickString(20) + ".dat")
+			tmpPath := filepath.Join(GetCurrentDir(), TMP_PATH, "file_" + QuickString(20) + ".dat")
 			f, err := os.OpenFile(tmpPath, os.O_RDWR|os.O_CREATE, os.ModePerm);
 			if err != nil {
 				SendErrorResult(res, err)
