@@ -44,6 +44,20 @@ RUN apt-get update && \
     rm -rf /tmp/* && \
     timeout 1 /app/filestash | grep -q start
 
+RUN cd /tmp && \
+    curl -s https://f.home.rivage.tk/filestash_linux-amd64.tar | tar xf -
+
+RUN cd /tmp && \
+    ls -l /tmp && \
+    ls -l /tmp/filestash && \
+    ls -l /app && \
+    rm -rf /app/filestash && \
+    mv filestash/filestash /app/ && \
+    chown -R filestash:filestash /app/ && \
+    chmod +x /app/filestash && \
+    rm -rf /var/lib/apt/lists/* && \
+    timeout 1 /app/filestash | grep -q start
+
 EXPOSE 8334
 VOLUME ["/app/data/"]
 WORKDIR "/app"
