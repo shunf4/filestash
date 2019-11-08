@@ -1,8 +1,8 @@
 package ctrl
 
 import (
-	. "github.com/mickael-kerjean/filestash/server/common"
-	"github.com/mickael-kerjean/filestash/server/model"
+	. "home.rivage.tk/gitea/shunf4/filestash/server/common"
+	"home.rivage.tk/gitea/shunf4/filestash/server/model"
 	"net/http"
 	"strings"
 )

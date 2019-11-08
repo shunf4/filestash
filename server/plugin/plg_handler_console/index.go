@@ -9,7 +9,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/gorilla/websocket"
 	"github.com/kr/pty"
-	. "github.com/mickael-kerjean/filestash/server/common"
+	. "home.rivage.tk/gitea/shunf4/filestash/server/common"
 	"golang.org/x/crypto/bcrypt"
 	"io"
 	"net/http"

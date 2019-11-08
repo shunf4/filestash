@@ -1,7 +1,7 @@
 package backend
 
 import (
-	. "github.com/mickael-kerjean/filestash/server/common"
+	. "home.rivage.tk/gitea/shunf4/filestash/server/common"
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"

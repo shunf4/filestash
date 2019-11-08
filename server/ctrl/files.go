@@ -4,8 +4,8 @@ import (
 	"encoding/base64"
 	"fmt"
 	"hash/fnv"
-	. "github.com/mickael-kerjean/filestash/server/common"
-	"github.com/mickael-kerjean/filestash/server/model"
+	. "home.rivage.tk/gitea/shunf4/filestash/server/common"
+	"home.rivage.tk/gitea/shunf4/filestash/server/model"
 	"io"
 	"net/http"
 	"os"
@@ -178,7 +178,7 @@ func FileCat(ctx App, res http.ResponseWriter, req *http.Request) {
 				}
 			}
 		} else {
-			tmpPath := filepath.Join(GetCurrentDir(), TMP_PATH, "file_" + QuickString(20) + ".dat")
+			tmpPath := filepath.Join(GetCurrentDir(), TMP_PATH, "filex_" + QuickString(20) + ".dat")
 			f, err := os.OpenFile(tmpPath, os.O_RDWR|os.O_CREATE, os.ModePerm);
 			if err != nil {
 				SendErrorResult(res, err)

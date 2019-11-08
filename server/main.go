@@ -2,10 +2,10 @@ package main
 
 import (
 	"github.com/gorilla/mux"
-	. "github.com/mickael-kerjean/filestash/server/common"
-	. "github.com/mickael-kerjean/filestash/server/ctrl"
-	. "github.com/mickael-kerjean/filestash/server/middleware"
-	_ "github.com/mickael-kerjean/filestash/server/plugin"
+	. "home.rivage.tk/gitea/shunf4/filestash/server/common"
+	. "home.rivage.tk/gitea/shunf4/filestash/server/ctrl"
+	. "home.rivage.tk/gitea/shunf4/filestash/server/middleware"
+	_ "home.rivage.tk/gitea/shunf4/filestash/server/plugin"
 	"net/http"
     "net/http/pprof"
 	"os"

@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
-	. "github.com/mickael-kerjean/filestash/server/common"
+	. "home.rivage.tk/gitea/shunf4/filestash/server/common"
 	"io"
 	"os"
 	"regexp"

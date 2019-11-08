@@ -2,8 +2,8 @@ package model
 
 import (
 	"fmt"
-	. "github.com/mickael-kerjean/filestash/server/common"
-	_ "github.com/mickael-kerjean/filestash/server/model/backend"
+	. "home.rivage.tk/gitea/shunf4/filestash/server/common"
+	_ "home.rivage.tk/gitea/shunf4/filestash/server/model/backend"
 	"strings"
 )
 
