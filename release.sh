@@ -4,4 +4,4 @@ sudo chmod -R o-r-w-x- ./dist/
 mv dist filestash
 tar -cf filestash_linux-amd64.tar ./filestash
 mv filestash dist
-mv filestash_linux-amd64.tar /home/test/files/
+sudo mv filestash_linux-amd64.tar /media/datadisk/syncthing/gossa/
